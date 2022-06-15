@@ -13,7 +13,49 @@
 		FECBD50728540F9100FA8B4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECBD50628540F9100FA8B4D /* Preview Assets.xcassets */; };
 		FECBD50928540F9100FA8B4D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBD50828540F9100FA8B4D /* Persistence.swift */; };
 		FECBD50C28540F9100FA8B4D /* MyTaskManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FECBD50A28540F9100FA8B4D /* MyTaskManager.xcdatamodeld */; };
+		FECBD5152854107C00FA8B4D /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FECBD5122854107C00FA8B4D /* sound-tap.mp3 */; };
+		FECBD5162854107C00FA8B4D /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FECBD5132854107C00FA8B4D /* sound-rise.mp3 */; };
+		FECBD5172854107C00FA8B4D /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FECBD5142854107C00FA8B4D /* sound-ding.mp3 */; };
+		FECBD52728541A7300FA8B4D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBD52628541A7300FA8B4D /* Constant.swift */; };
+		FECBD5292854607E00FA8B4D /* HideKeyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBD5282854607E00FA8B4D /* HideKeyboard+Extension.swift */; };
+		FECBD52B285464FF00FA8B4D /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBD52A285464FF00FA8B4D /* BackgroundImageView.swift */; };
+		FECBD52D2854662000FA8B4D /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBD52C2854662000FA8B4D /* NewTaskItemView.swift */; };
+		FECBD52F28546C5200FA8B4D /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBD52E28546C5200FA8B4D /* BlankView.swift */; };
+		FECBD531285474E700FA8B4D /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBD530285474E700FA8B4D /* ListRowItemView.swift */; };
+		FECBD5332854798E00FA8B4D /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBD5322854798E00FA8B4D /* CheckboxStyle.swift */; };
+		FECBD5352854807B00FA8B4D /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBD5342854807B00FA8B4D /* SoundPlayer.swift */; };
+		FECBD53D285486AA00FA8B4D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECBD53C285486AA00FA8B4D /* WidgetKit.framework */; };
+		FECBD53F285486AA00FA8B4D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECBD53E285486AA00FA8B4D /* SwiftUI.framework */; };
+		FECBD542285486AA00FA8B4D /* MyTaskManagerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBD541285486AA00FA8B4D /* MyTaskManagerWidget.swift */; };
+		FECBD544285486AB00FA8B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECBD543285486AB00FA8B4D /* Assets.xcassets */; };
+		FECBD548285486AB00FA8B4D /* MyTaskManagerWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FECBD53A285486AA00FA8B4D /* MyTaskManagerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FECBD54D28548BA300FA8B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECBD50328540F9100FA8B4D /* Assets.xcassets */; };
+		FECBD54E28548C4800FA8B4D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBD52628541A7300FA8B4D /* Constant.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FECBD546285486AB00FA8B4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FECBD4F428540F9100FA8B4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FECBD539285486AA00FA8B4D;
+			remoteInfo = MyTaskManagerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FECBD54C285486AB00FA8B4D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FECBD548285486AB00FA8B4D /* MyTaskManagerWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FECBD4FC28540F9100FA8B4D /* MyTaskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTaskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +65,24 @@
 		FECBD50628540F9100FA8B4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FECBD50828540F9100FA8B4D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FECBD50B28540F9100FA8B4D /* MyTaskManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyTaskManager.xcdatamodel; sourceTree = "<group>"; };
+		FECBD5122854107C00FA8B4D /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		FECBD5132854107C00FA8B4D /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		FECBD5142854107C00FA8B4D /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		FECBD520285411A800FA8B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FECBD52628541A7300FA8B4D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FECBD5282854607E00FA8B4D /* HideKeyboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HideKeyboard+Extension.swift"; sourceTree = "<group>"; };
+		FECBD52A285464FF00FA8B4D /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		FECBD52C2854662000FA8B4D /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		FECBD52E28546C5200FA8B4D /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		FECBD530285474E700FA8B4D /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
+		FECBD5322854798E00FA8B4D /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		FECBD5342854807B00FA8B4D /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		FECBD53A285486AA00FA8B4D /* MyTaskManagerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyTaskManagerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECBD53C285486AA00FA8B4D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FECBD53E285486AA00FA8B4D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FECBD541285486AA00FA8B4D /* MyTaskManagerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaskManagerWidget.swift; sourceTree = "<group>"; };
+		FECBD543285486AB00FA8B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FECBD545285486AB00FA8B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +93,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FECBD537285486AA00FA8B4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECBD53F285486AA00FA8B4D /* SwiftUI.framework in Frameworks */,
+				FECBD53D285486AA00FA8B4D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -40,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				FECBD4FE28540F9100FA8B4D /* MyTaskManager */,
+				FECBD53B285486AA00FA8B4D /* Frameworks */,
 				FECBD4FD28540F9100FA8B4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				FECBD4FC28540F9100FA8B4D /* MyTaskManager.app */,
+				FECBD53A285486AA00FA8B4D /* MyTaskManagerWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,10 +127,16 @@
 			isa = PBXGroup;
 			children = (
 				FECBD4FF28540F9100FA8B4D /* MyTaskManagerApp.swift */,
-				FECBD50128540F9100FA8B4D /* ContentView.swift */,
+				FECBD540285486AA00FA8B4D /* MyTaskManagerWidget */,
+				FECBD519285410A000FA8B4D /* App */,
+				FECBD51B285410B600FA8B4D /* Views */,
+				FECBD51A285410AE00FA8B4D /* Model */,
+				FECBD51E285410DD00FA8B4D /* Styles */,
+				FECBD51D285410D400FA8B4D /* Utilitys */,
+				FECBD51C285410C900FA8B4D /* Extensions */,
+				FECBD5182854108200FA8B4D /* Sounds */,
 				FECBD50328540F9100FA8B4D /* Assets.xcassets */,
-				FECBD50828540F9100FA8B4D /* Persistence.swift */,
-				FECBD50A28540F9100FA8B4D /* MyTaskManager.xcdatamodeld */,
+				FECBD520285411A800FA8B4D /* Info.plist */,
 				FECBD50528540F9100FA8B4D /* Preview Content */,
 			);
 			path = MyTaskManager;
@@ -73,6 +150,88 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FECBD5182854108200FA8B4D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FECBD5142854107C00FA8B4D /* sound-ding.mp3 */,
+				FECBD5132854107C00FA8B4D /* sound-rise.mp3 */,
+				FECBD5122854107C00FA8B4D /* sound-tap.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		FECBD519285410A000FA8B4D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FECBD50128540F9100FA8B4D /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FECBD51A285410AE00FA8B4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FECBD50828540F9100FA8B4D /* Persistence.swift */,
+				FECBD50A28540F9100FA8B4D /* MyTaskManager.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FECBD51B285410B600FA8B4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FECBD52A285464FF00FA8B4D /* BackgroundImageView.swift */,
+				FECBD52C2854662000FA8B4D /* NewTaskItemView.swift */,
+				FECBD52E28546C5200FA8B4D /* BlankView.swift */,
+				FECBD530285474E700FA8B4D /* ListRowItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FECBD51C285410C900FA8B4D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FECBD5282854607E00FA8B4D /* HideKeyboard+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FECBD51D285410D400FA8B4D /* Utilitys */ = {
+			isa = PBXGroup;
+			children = (
+				FECBD52628541A7300FA8B4D /* Constant.swift */,
+				FECBD5342854807B00FA8B4D /* SoundPlayer.swift */,
+			);
+			path = Utilitys;
+			sourceTree = "<group>";
+		};
+		FECBD51E285410DD00FA8B4D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FECBD5322854798E00FA8B4D /* CheckboxStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		FECBD53B285486AA00FA8B4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FECBD53C285486AA00FA8B4D /* WidgetKit.framework */,
+				FECBD53E285486AA00FA8B4D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FECBD540285486AA00FA8B4D /* MyTaskManagerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FECBD541285486AA00FA8B4D /* MyTaskManagerWidget.swift */,
+				FECBD543285486AB00FA8B4D /* Assets.xcassets */,
+				FECBD545285486AB00FA8B4D /* Info.plist */,
+			);
+			path = MyTaskManagerWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +242,34 @@
 				FECBD4F828540F9100FA8B4D /* Sources */,
 				FECBD4F928540F9100FA8B4D /* Frameworks */,
 				FECBD4FA28540F9100FA8B4D /* Resources */,
+				FECBD54C285486AB00FA8B4D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FECBD547285486AB00FA8B4D /* PBXTargetDependency */,
 			);
 			name = MyTaskManager;
 			productName = MyTaskManager;
 			productReference = FECBD4FC28540F9100FA8B4D /* MyTaskManager.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FECBD539285486AA00FA8B4D /* MyTaskManagerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FECBD549285486AB00FA8B4D /* Build configuration list for PBXNativeTarget "MyTaskManagerWidgetExtension" */;
+			buildPhases = (
+				FECBD536285486AA00FA8B4D /* Sources */,
+				FECBD537285486AA00FA8B4D /* Frameworks */,
+				FECBD538285486AA00FA8B4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTaskManagerWidgetExtension;
+			productName = MyTaskManagerWidgetExtension;
+			productReference = FECBD53A285486AA00FA8B4D /* MyTaskManagerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,6 +282,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					FECBD4FB28540F9100FA8B4D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					FECBD539285486AA00FA8B4D = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -122,6 +303,7 @@
 			projectRoot = "";
 			targets = (
 				FECBD4FB28540F9100FA8B4D /* MyTaskManager */,
+				FECBD539285486AA00FA8B4D /* MyTaskManagerWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,8 +313,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECBD5172854107C00FA8B4D /* sound-ding.mp3 in Resources */,
+				FECBD5152854107C00FA8B4D /* sound-tap.mp3 in Resources */,
+				FECBD5162854107C00FA8B4D /* sound-rise.mp3 in Resources */,
 				FECBD50728540F9100FA8B4D /* Preview Assets.xcassets in Resources */,
 				FECBD50428540F9100FA8B4D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECBD538285486AA00FA8B4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECBD54D28548BA300FA8B4D /* Assets.xcassets in Resources */,
+				FECBD544285486AB00FA8B4D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,13 +338,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECBD50928540F9100FA8B4D /* Persistence.swift in Sources */,
+				FECBD52B285464FF00FA8B4D /* BackgroundImageView.swift in Sources */,
 				FECBD50228540F9100FA8B4D /* ContentView.swift in Sources */,
+				FECBD5292854607E00FA8B4D /* HideKeyboard+Extension.swift in Sources */,
+				FECBD52F28546C5200FA8B4D /* BlankView.swift in Sources */,
+				FECBD52728541A7300FA8B4D /* Constant.swift in Sources */,
+				FECBD531285474E700FA8B4D /* ListRowItemView.swift in Sources */,
 				FECBD50C28540F9100FA8B4D /* MyTaskManager.xcdatamodeld in Sources */,
 				FECBD50028540F9100FA8B4D /* MyTaskManagerApp.swift in Sources */,
+				FECBD5332854798E00FA8B4D /* CheckboxStyle.swift in Sources */,
+				FECBD5352854807B00FA8B4D /* SoundPlayer.swift in Sources */,
+				FECBD52D2854662000FA8B4D /* NewTaskItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECBD536285486AA00FA8B4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECBD542285486AA00FA8B4D /* MyTaskManagerWidget.swift in Sources */,
+				FECBD54E28548C4800FA8B4D /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FECBD547285486AB00FA8B4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FECBD539285486AA00FA8B4D /* MyTaskManagerWidgetExtension */;
+			targetProxy = FECBD546285486AB00FA8B4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FECBD50D28540F9100FA8B4D /* Debug */ = {
@@ -270,6 +489,7 @@
 		FECBD51028540F9100FA8B4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -278,9 +498,10 @@
 				DEVELOPMENT_TEAM = NT7J23RCPK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTaskManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,6 +520,7 @@
 		FECBD51128540F9100FA8B4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,9 +529,10 @@
 				DEVELOPMENT_TEAM = NT7J23RCPK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTaskManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,6 +542,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.manuelalvarez.MyTaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FECBD54A285486AB00FA8B4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NT7J23RCPK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTaskManager/MyTaskManagerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Task Manager Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelalvarez.MyTaskManager.MyTaskManagerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FECBD54B285486AB00FA8B4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NT7J23RCPK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTaskManager/MyTaskManagerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Task Manager Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelalvarez.MyTaskManager.MyTaskManagerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +619,15 @@
 			buildConfigurations = (
 				FECBD51028540F9100FA8B4D /* Debug */,
 				FECBD51128540F9100FA8B4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FECBD549285486AB00FA8B4D /* Build configuration list for PBXNativeTarget "MyTaskManagerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECBD54A285486AB00FA8B4D /* Debug */,
+				FECBD54B285486AB00FA8B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
